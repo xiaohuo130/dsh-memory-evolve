@@ -599,7 +599,7 @@ test('scheduler: memory context injection (AI 自主选择轨, inline + file fal
   const withBig = scheduler.dispatch({ adapterId: 'grok', prompt: '任务4', injectTracks: ['key'], contextText: big })
   const arg3 = harness.children[4].args[1]
   assert.ok(arg3.includes('已写入文件'))
-  assert.match(arg3, /contexts\/coi-[a-z0-9-]+\.txt/)
+  assert.match(arg3, /contexts[\\/]coi-[a-z0-9-]+\.txt/)
   // 非法轨被过滤（不会注入）
   const bad = scheduler.dispatch({ adapterId: 'grok', prompt: '任务5', injectTracks: ['memory', 'AGENTS'] })
   assert.ok(harness.children[5].args[1].includes('背景信息'), '合法轨仍注入')
@@ -968,7 +968,7 @@ test('coi tools: status/wait render 输出开头给出完整日志路径（省�
   harness.children[0].stdout.emit('data', '第一行输出\n')
   harness.children[0].emit('close', 0)
   const done = statusTool.output.render({}, { ok: true, message: 'm', task: (await statusTool.execute({ taskId: result.taskId })).task })
-  assert.match(done[0].text, /完整日志：.*logs\/.+\.log（输出为尾部摘要；需要完整输出请用 read 工具读取该文件，不要自行搜索）/s)
+  assert.match(done[0].text, /完整日志：.*logs[\\/].+\.log（输出为尾部摘要；需要完整输出请用 read 工具读取该文件，不要自行搜索）/s)
   assert.ok(done[0].text.includes(scheduler.tasks.logPath(result.taskId)), '路径必须与留档文件一致')
   // wait 同款
   const waited = await waitTool.execute({ taskId: result.taskId, timeoutMs: 2000 })

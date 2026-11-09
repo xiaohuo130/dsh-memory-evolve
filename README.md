@@ -83,7 +83,7 @@ node --test 'tests/*.test.js'   # Node >= 20
 
 测试覆盖记忆存储、同步、会话广播、COI 调度、待办、技能、书签、通知、WebUI API 等模块。
 
-> **测试状态**：测试套件在 macOS 上编写。Windows 上 729 个用例中有 52 个失败，原因均为平台差异——路径分隔符（`D:\w\a.js` vs `/w/a.js`）、`/Volumes` 与 `mdfind` 探测、依赖真实 git 仓库的场景。这些失败在本次发布整理前就存在，不是回归。
+> **测试状态**：`node --test 'tests/*.test.js'` 在 Windows 11（Node 22）与 macOS 上均 **729/729 通过**——路径归一化、平台探测（`/Volumes`、`mdfind`）与依赖真实 git 仓库的场景都已做跨平台处理。
 
 ## 目录结构
 

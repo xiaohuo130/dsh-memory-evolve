@@ -83,7 +83,7 @@ node --test 'tests/*.test.js'   # Node >= 20
 
 Covers memory storage, sync, broadcast, COI dispatch, todos, skills, bookmarks, notifications and WebUI APIs.
 
-> **Test status**: the suite was written on macOS. On Windows, 52 of 729 cases fail for platform-specific reasons — path separators (`D:\w\a.js` vs `/w/a.js`), `/Volumes` and `mdfind` probes, and scenarios that need a real git repository. These failures predate the public-release clean-up and are not regressions.
+> **Test status**: `node --test 'tests/*.test.js'` passes **729/729** on both Windows 11 (Node 22) and macOS — path normalization, platform probes (`/Volumes`, `mdfind`) and git-backed scenarios are all cross-platform.
 
 ## Layout
 
