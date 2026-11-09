@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="docs/images/banner.png" width="100%" alt="dsh-memory-evolve">
+
 # 🧬 dsh-memory-evolve
 
 **Give the AI inside DSH a memory of you, a memory of the project, and a habit of getting better.**
@@ -33,55 +35,12 @@ Beyond that: **multi-agent dispatch** (external AI CLIs), **session broadcast** 
 
 ---
 
-## Features
+## What you get
 
-<table>
-<tr><td width="50%" valign="top">
+<img src="docs/images/features-en.png" width="100%" alt="Six capabilities, all opt-in">
 
-### 🧠 Layered memory
-Five separate layers (user profile / global facts / project key memory / project log / daily log). Project memory can be **scoped to a git branch**; over-budget entries degrade to index lines instead of being deleted.
-
-<img src="docs/images/记忆执行.png" width="100%">
-
-</td><td width="50%" valign="top">
-
-### 🌱 Self-evolution
-Distil experience from real conversations into reusable skills — browse, edit, export.
-
-<img src="docs/images/技能tab.png" width="100%">
-
-</td></tr>
-<tr><td valign="top">
-
-### ✅ Four-track todos
-Independent project / work / life / daily tracks, quadrants, due dates, status flow.
-
-<img src="docs/images/待办tab.png" width="100%">
-
-</td><td valign="top">
-
-### 🤝 COI dispatch
-Hand tasks to kimi / codex / grok / hermes and other external AI CLIs, with progress visibility.
-
-<img src="docs/images/COI调度tab.png" width="100%">
-
-</td></tr>
-<tr><td valign="top">
-
-### 📡 Session broadcast
-Message other DSH sessions — rooms, presence, image attachments.
-
-<img src="docs/images/会话广播.png" width="100%">
-
-</td><td valign="top">
-
-### 🎨 Canvas / Prompt library
-Pin files, text, images and media onto a pannable board; manage prompts and inject them per scenario.
-
-<img src="docs/images/提示词注入tab.png" width="100%">
-
-</td></tr>
-</table>
+> 📷 The plugin UI currently ships in **Chinese only**, so the product screenshots are Chinese.
+> Real screenshots live in [`docs/images/`](./docs/images); the image above is an English feature map.
 
 Full screenshots and walkthroughs: [usage guide](./docs/USAGE.en.md).
 

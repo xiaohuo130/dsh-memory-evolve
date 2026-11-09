@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="docs/images/banner.png" width="100%" alt="dsh-memory-evolve">
+
 # 🧬 dsh-memory-evolve
 
 **让 DSH 里的 AI 记住你、记住项目、越用越顺手。**
