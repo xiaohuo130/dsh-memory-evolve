@@ -23,7 +23,7 @@
                                "platform":  "web"
                            }
             },
-    "author":  "dsh-external",
+    "author":  "xiaohuo130",
     "repository":  {
                        "type":  "git",
                        "url":  "git+https://github.com/xiaohuo130/dsh-memory-evolve.git"
